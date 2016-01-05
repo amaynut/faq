@@ -1,0 +1,18 @@
+<template name="questions">
+
+        <div class="row column text-center">
+            <h1>Frequently Asked Questions (FAQ)</h1>
+            <h2 class="subheader">Find here answers to the most frequently asked questions</h2>
+            <ul class="accordion" data-accordion>
+                {{#each questions}}
+                <li class="accordion-navigation">
+                    <a href="#panel-{{i}}">{{question}}</a>
+                    <div id="panel-{{i}}" class="content">
+                      {{answer}}
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+
+</template>

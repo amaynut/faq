@@ -1,0 +1,14 @@
+<template name="layout">
+{{> navbar}}
+    <div class="row">
+        <div class="large-12 columns">
+            {{> yield}}
+        </div>
+
+    </div>
+<script>
+    $(document).ready(function(){
+        $(document).foundation();
+    })
+</script>
+</template>
